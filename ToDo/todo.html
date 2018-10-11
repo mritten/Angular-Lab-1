@@ -1,0 +1,15 @@
+<form>
+        <h1>To Do List</h1>
+        <p>A place to store the things you have to do!</p>
+        <input type="text" placeholder="Filter your to-dos" ng-model="$ctrl.filter">
+        <ol> 
+            <li ng-repeat="toDo in $ctrl.tasks" ng-class="{strick: toDo.complete === false}">
+             <button ng-disabled="!$ctrl.filter" class="complete" ng-if="toDo.complete === true" ng-click="$ctrl.complete()">Completed</button>
+            {{toDo.toDo}}
+            <button ng-disabled="!$ctrl.filter" ng-click="$ctrl.removeTask(index)" class="x">X</button>
+            </li>
+        </ol>
+
+        <input type="text" placeholder="Add to your to-do" ng-model="$ctrl.add" class="more">
+        <button class="add" ng-click="$ctrl.addTask(todo)" ng-disabled="!$ctrl.add">Add</button>
+    </form>

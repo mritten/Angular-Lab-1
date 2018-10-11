@@ -1,0 +1,60 @@
+.strike {
+  text-decoration: line-through;
+}
+body {
+  background: linear-gradient(to right, #ff0066 0%, #ff99cc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+ }
+ 
+ form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 50px;
+  width: 375px;
+ }
+ 
+ .complete {
+  background: white;
+  border: 2px solid rgba(255, 0, 200, 0.801);
+  border-radius: 5px;
+  justify-content: flex-start;
+  color:  rgba(255, 0, 200, 0.801);
+ }
+ 
+ .x {
+  background: none;
+  border: none;
+  float: right;
+ }
+ 
+ .add {
+ background-color: rgba(255, 0, 200, 0.801);
+ color: white;
+ height: 35px;
+ border-radius: 7px;
+ border: none;
+ }
+ input{
+     border-radius: 7px;
+     height: 35px;  
+     width: auto;
+ }
+ .more, li {
+     margin-bottom: 7px;
+ }
+ h1{
+     margin-bottom: 3px;
+ }
+ 
+ p{
+     margin-top: 0px;
+ }
+ button {
+     cursor: pointer;
+ }
+
